@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "main.h"
-#include "logll.h"
+#include "linklist.h"
 
 int main(int argc, char** argv) {
     bool   exit        = false;
@@ -11,10 +11,11 @@ int main(int argc, char** argv) {
     link_list_init();
 
 	printf("Hello! This is a demo of linked list in a limited array.\n");
-	printf("q: quit, a: add, r: remove, c: clear, d: dump, w: dump raw\n");
 	while(!exit) {
+       	if (input != '\n'){
+           printf("\n[q: quit, a: add, r: remove, c: clear, d: dump, w: dump raw]\nCmd: ");
+        }
 		if(scanf("%c",&input) == 1) {
-		    
 		    switch(input)
 		    {
             case 'a':

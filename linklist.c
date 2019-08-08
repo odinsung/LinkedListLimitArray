@@ -6,13 +6,9 @@
 #include "main.h"
 #include "linklist.h"
 
-//int Head = 0xFF; // Physical index of the first node in the linked list.
-//int Tail = 0xFF; // Physical index of the last node in the linked list.
-
 struct Node_t LL[LL_NUM];
 struct Node_t *Head = NULL;
 struct Node_t *Tail = NULL;
-
 
 void link_list_init(void){
     int i=0;
